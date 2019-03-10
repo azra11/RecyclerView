@@ -14,6 +14,7 @@ public class pola {
         Deskripsi = deskripsi;
     }
 
+
     public int getImg() {
         return img;
     }

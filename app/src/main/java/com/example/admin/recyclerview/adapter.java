@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -47,6 +48,7 @@ public class adapter extends RecyclerView.Adapter<adapter.holder> {
             in.putExtra("id_deskrip", item.get(i).getDeskripsi());//submethod digunakan untuk mengirimke detail acitivity
             in.putExtra("image",item.get(i).getImg()); //getImg didapat dari pola
             v.getContext().startActivity(in);
+            Toast.makeText(context,item.get(i).getJudul(),Toast.LENGTH_SHORT).show();
         }
     });
     }
